@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Link } from "react-router-dom";
 import {
   About,
   Contact,
@@ -15,7 +15,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover-bg-no-repeat bg-center">
+        <div className="bg-hero-pattern bg-cover-bg-no-repeat bg-center flex justify-center">
           <Navbar />
           <Hero />
         </div>
@@ -28,6 +28,17 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
+        <Link reloadDocument to="#hero">
+          <footer className="sticky bottom-5 w-full cursor-pointer">
+            <div className="flex items-center justify-center">
+              <img
+                className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer object-cover"
+                src={"./profile.jpg"}
+                alt={"User image"}
+              />
+            </div>
+          </footer>
+        </Link>
       </div>
     </BrowserRouter>
   );

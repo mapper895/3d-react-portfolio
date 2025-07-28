@@ -23,6 +23,11 @@ import {
   jobit,
   tripguide,
   threejs,
+  academic,
+  web_icon,
+  wordpress,
+  eventapp,
+  days,
 } from "../assets";
 
 export const navLinks = [
@@ -54,7 +59,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Web Designer",
     icon: creator,
   },
 ];
@@ -115,56 +120,98 @@ const technologies = [
 ];
 
 const experiences = [
+  // {
+  //   title: "React.js Developer",
+  //   company_name: "Starbucks",
+  //   icon: starbucks,
+  //   iconBg: "#383E56",
+  //   date: "March 2020 - April 2021",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
+  // {
+  //   title: "React Native Developer",
+  //   company_name: "Tesla",
+  //   icon: tesla,
+  //   iconBg: "#E6DEDD",
+  //   date: "Jan 2021 - Feb 2022",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
+  // {
+  //   title: "Web Developer",
+  //   company_name: "Shopify",
+  //   icon: shopify,
+  //   iconBg: "#383E56",
+  //   date: "Jan 2022 - Jan 2023",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
+  // {
+  //   title: "Full stack Developer",
+  //   company_name: "Meta",
+  //   icon: meta,
+  //   iconBg: "#E6DEDD",
+  //   date: "Jan 2023 - Present",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Web Development Consultant",
+    company_name: "Freelance Project",
+    icon: web_icon,
+    iconBg: "#D1E8E2",
+    date: "Nov 2020 - Jan 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Provided web consulting services to small businesses, focusing on performance optimization and user interface improvements.",
+      "Designed responsive web layouts using HTML, CSS, and modern JavaScript practices.",
+      "Assisted clients in deploying their websites using hosting platforms and provided documentation for future updates.",
+      "Advised on SEO basics and web accessibility to improve reach and user experience.",
+      "Collaborated with clients to gather requirements and deliver customized web solutions tailored to their needs.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Full Stack Developer",
+    company_name: "Thesis Project - MERN App",
+    icon: academic,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Feb 2025 - Jul 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and deployed a full-stack web application using the MERN stack for managing user-authenticated events.",
+      "Implemented user authentication with JWT and bcrypt, handling secure sessions via cookies.",
+      "Used Chart.js for dynamic data visualization and implemented filters to improve user experience.",
+      "Tested REST APIs using Postman, validating endpoints for performance and correctness.",
+      "Ensured scalability and performance through modular code structure and clean API design.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "E-commerce Developer",
+    company_name: "Online Store",
+    icon: wordpress,
+    iconBg: "#FDF0E0",
+    date: "Jul 2025 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing an online store using WordPress and WooCommerce to manage product listings, payments, and customer accounts.",
+      "Customized store functionality with plugins and tailored themes to meet specific client requirements.",
+      "Integrated secure payment gateways, including PayPal and Stripe, for seamless transactions.",
+      "Optimized site performance with caching tools and responsive design techniques.",
+      "Configured inventory, shipping, and tax settings to ensure operational readiness.",
     ],
   },
 ];
@@ -198,9 +245,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Event App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A full-stack web application where users can create, manage, and track events. Includes user authentication, real-time statistics, a recommendation system, and web scraping features to enrich event data and enhance user experience.",
     tags: [
       {
         name: "react",
@@ -214,21 +261,26 @@ const projects = [
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "python",
+        color: "orange-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: eventapp,
+    source_code_link: "https://github.com/mapper895/Prototipo-tesis",
+    demo: "https://tesis-app-7sij.onrender.com/",
   },
   {
-    name: "Job IT",
+    name: "Days",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A dynamic and visually rich website built to explore creative front-end techniques. Features smooth animations, interactive elements, and mouse-based effects to enhance user engagement.",
     tags: [
       {
-        name: "react",
+        name: "javascript",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "gsap",
         color: "green-text-gradient",
       },
       {
@@ -236,20 +288,21 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: days,
     source_code_link: "https://github.com/",
+    demo: "https://distracted-murdock-1c4d26.netlify.app/index.html",
   },
   {
-    name: "Trip Guide",
+    name: "To-do List",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A straightforward web application that allows users to create, edit, and delete tasks. Designed with a clean interface to help users organize their daily activities efficiently.",
     tags: [
       {
-        name: "nextjs",
+        name: "javascript",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "html",
         color: "green-text-gradient",
       },
       {
@@ -257,9 +310,16 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: todo,
     source_code_link: "https://github.com/",
+    demo: "https://mapper-todo-list.netlify.app/",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const socials = [
+  { title: "LinkedIn", url: "https://linkedin.com/in/miguelperez02" },
+  { title: "Instagram", url: "https://instagram.com/miguelperez.02" },
+  { title: "Github", url: "https://github.com/mapper895" },
+];
+
+export { services, technologies, experiences, testimonials, projects, socials };

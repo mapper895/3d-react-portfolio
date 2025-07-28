@@ -11,9 +11,41 @@ const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
 
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        "service_wu8gyqq",
+        "template_hwg9b59",
+        {
+          from_name: form.name,
+          to_name: "Miguel Pérez",
+          from_email: form.email,
+          to_email: "miguel.perez.perez.895@gmail.com",
+          message: form.message,
+        },
+        "b53vVEbsdr0LiTR-6"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Mensaje enviado correctamente.");
+          setForm({ name: "", email: "", message: "" });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+          alert("Algo salió mal. Intenta de nuevo.");
+        }
+      );
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">

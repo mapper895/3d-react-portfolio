@@ -1,46 +1,64 @@
-import { motion } from "framer-motion";
-import { styles } from "../style";
-import { ComputersCanvas } from "./canvas";
+import React from "react";
+import { Link } from "react-router-dom";
+
+import { useTypewriter, Cursor } from "react-simple-typewriter";
+import BackgroundCircles from "./BackgroundCircles";
 
 const Hero = () => {
+  const pageInfo = {
+    name: "Miguel Perez",
+    heroImage: "./profile.jpg",
+    role: "Telematics Engineer",
+  };
+  const [text, count] = useTypewriter({
+    words: [
+      "Hi, The Name's Miguel Pérez",
+      "GuyWhoLovesCofee.jsx",
+      "<ButLovesToCodeMore />",
+    ],
+    loop: true,
+    delaySpeed: 2000,
+  });
+
   return (
-    <section className="relative w-full h-screen mx-auto">
-      <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
-      >
-        <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915eff]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
-        </div>
+    <div
+      id="hero"
+      className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden"
+    >
+      <BackgroundCircles />
+      <img
+        src={pageInfo.heroImage}
+        alt="profile"
+        className="relative rounded-full h-32 w-32 mx-auto object-cover"
+      />
+      <div className="z-20">
+        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
+          {pageInfo.role}
+        </h2>
+        <h1 className="md:text-5xl text-2xl lg:text-6xl font-semibold scroll-px-10">
+          <span className="mr-3 ">{text}</span>
+          <Cursor cursorColor="#F7AB0A" />
+        </h1>
 
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915eff]">Mapper</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className="sm:block hidden" />
-            interfaces and web application
-          </p>
+        <div className="pt-5">
+          <Link reloadDocument to="/#about">
+            <button className="heroButton">About</button>
+          </Link>
+          <Link reloadDocument to="/#work">
+            <button className="heroButton">Experience</button>
+          </Link>
+          <Link reloadDocument to="/#skills">
+            <button className="heroButton">Skills</button>
+          </Link>
+          <Link reloadDocument to="/#feedbacks">
+            <button className="heroButton">Testimonials</button>
+          </Link>
+          <Link reloadDocument to="/#projects">
+            <button className="heroButton">Projects</button>
+          </Link>
         </div>
       </div>
-      <ComputersCanvas />
-
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
-        <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
-            <motion.div
-              animate={{ y: [0, 24, 0] }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className="w-3 h-3 rounded-full bg-secondary mb-1"
-            />
-          </div>
-        </a>
-      </div>
-    </section>
+    </div>
   );
 };
 

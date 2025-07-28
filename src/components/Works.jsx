@@ -14,6 +14,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  demo,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -21,7 +22,10 @@ const ProjectCard = ({
         options={{ max: 45, scale: 1, speed: 45550 }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[230px]">
+        <div
+          className="relative w-full h-[230px] cursor-pointer"
+          onClick={() => window.open(demo, "_blank")}
+        >
           <img
             src={image}
             alt={name}
@@ -89,4 +93,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");

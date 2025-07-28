@@ -25,10 +25,16 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import academic from "./company/academic.png";
+import web_icon from "./company/web.png";
+import wordpress from "./company/wordpress.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import eventapp from "./event_app.png";
+import days from "./days.png";
+import todo from "./todo.png";
 
 export {
   logo,
@@ -59,4 +65,10 @@ export {
   carrent,
   jobit,
   tripguide,
+  academic,
+  web_icon,
+  wordpress,
+  eventapp,
+  days,
+  todo,
 };
