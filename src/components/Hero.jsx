@@ -50,9 +50,9 @@ const Hero = () => {
           <Link reloadDocument to="/#skills">
             <button className="heroButton">Skills</button>
           </Link>
-          <Link reloadDocument to="/#feedbacks">
+          {/* <Link reloadDocument to="/#feedbacks">
             <button className="heroButton">Testimonials</button>
-          </Link>
+          </Link> */}
           <Link reloadDocument to="/#projects">
             <button className="heroButton">Projects</button>
           </Link>
